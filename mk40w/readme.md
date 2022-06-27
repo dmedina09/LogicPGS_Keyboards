@@ -6,3 +6,5 @@ Ortholinear 40% keyboard based on planck and whimsy
 * Oled Display 128x64
 * USB-C Port
 * RGB LEDs (SK6812 MINI-e)
+
+* Layout folder should be copied into the layout/default fonder in qmk folder
