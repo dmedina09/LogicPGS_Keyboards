@@ -1,0 +1,76 @@
+#pragma once
+
+#include "config_common.h"
+
+#define VENDOR_ID 0x0167  // LogicPGS
+#define PRODUCT_ID 0x167B
+#define DEVICE_VER 0x0001
+#define MANUFACTURER LogicPGS
+#define PRODUCT MK40W
+
+// KEYBOARD ID
+#define VIAL_KEYBOARD_UID { 0x50, 0x9F, 0xDF, 0x38, 0x97, 0x20, 0x16, 0x87 }
+
+//KEYBOARD SECURITY
+#define VIAL_UNLOCK_COMBO_ROWS {0, 1, 1}
+#define VIAL_UNLOCK_COMBO_COLS {2, 1, 3}
+
+/* key matrix size */
+// SPECIFY NUMBER OF ROWS AND COLUMNS
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 13
+
+// ORIGINAL
+#define MATRIX_ROW_PINS { F0, C7, D6, B2 }
+#define MATRIX_COL_PINS { D4, D7, B4, B5, B6, C6, F7, F6, F5, F4, F1, B1, B3 }
+
+//TEST
+//#define MATRIX_COL_PINS { D4, D7, B4, B5, B6, B7, F7, F6, F5, F4, F1, B1, B3 }
+
+// LATENCY
+#define DEBOUNCE 2
+
+/* COL2ROW, ROW2COL */
+#define DIODE_DIRECTION COL2ROW
+
+#define RGB_DI_PIN D3
+
+#ifdef RGBLIGHT_ENABLE
+#    define RGBLED_NUM 47  // Number of LEDs
+#endif
+
+#ifdef RGB_MATRIX_ENABLE
+#    define RGBLED_NUM 47  // Number of LEDs
+#    define DRIVER_LED_TOTAL RGBLED_NUM
+#endif
+
+// ENCODERS
+#define ENCODERS_PAD_A { D2 } //RIGHT LEG
+#define ENCODERS_PAD_B { E6 } //LEFT LEG
+#define VIAL_ENCODER_DEFAULT { KC_VOLD, KC_VOLU, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO }
+
+//#define ENCODER_RESOLUTION 4
+#define VIAL_ENCODER_KEYCODE_DELAY 10
+
+// DEFINE AUDIO PIN
+// ORIGINAL AUDIO_PIN B7
+//#define AUDIO_PIN B7
+
+//#define STARTUP_SONG SONG(SOUND_DIEGO_TEST)
+
+// PLAY MUSIC (SONG)
+// float caps_on[][2] = SONG(CAPS_LOCK_ON_SOUND);
+// float caps_off[][2] = SONG(CAPS_LOCK_OFF_SOUND);
+
+// AUDIO ENABLE
+#ifdef AUDIO_ENABLE
+    //#define AUDIO_PIN C6
+    #define AUDIO_PIN B7
+    //#define STARTUP_SONG SONG(USSR_ANTHEM)
+#endif
+
+//OLED DISPLAY 128x64
+#ifdef OLED_ENABLE
+    #define OLED_BRIGHTNESS 150
+    #define OLED_DISPLAY_128X64
+#endif
