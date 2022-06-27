@@ -1,2 +1,2 @@
-# LogicPGS_Keyboards
+# LogicPGS Keyboards
 Keyboards manufactured by LogicPGS.
