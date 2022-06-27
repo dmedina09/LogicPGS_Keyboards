@@ -7,4 +7,5 @@ Ortholinear 40% keyboard based on planck and whimsy
 * USB-C Port
 * RGB LEDs (SK6812 MINI-e)
 
-* Layout folder should be copied into the layout/default fonder in qmk folder
+* Layout folder should be copied into the layout/default fonder in vial folder
+* Vial folder is needed to compile this keyboard https://github.com/vial-kb/vial-qmk
