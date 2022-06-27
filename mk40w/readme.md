@@ -1,10 +1,8 @@
-# KEYBOARD BASED ON PLANCK AND WHIMSY KEYBOARD
-# ORTHOLINEAR KEYBOARD
-# 40% KEYBOARD
-# 47 SWITCHES
-# SPACEBAR 2U SIZE (1)
-# COMPATIBLE WITH ENCODER, OLED DISPLAY 128x64 AND BUZZER FOR SOUNDS
-# ERZA SCARLET AS PCB SILKSCREEN
-# Version 1.0
-# Created by LogicPGS
-# Firmware by Diego Medina
+## MK40W
+Ortholinear 40% keyboard based on planck and whimsy
+* 47 Switches
+* Rotary Encoder
+* 5v Buzzer (Audio_Enable)
+* Oled Display 128x64
+* USB-C Port
+* RGB LEDs (SK6812 MINI-e)
